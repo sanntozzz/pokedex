@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background: linear-gradient(to bottom, #60a5fa, #f0f9ff);
+}
+
+main {
+    background-image: url('../images/container_bg.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+    text-align: center;
+}
+
+main div {
+    position: relative;
+}
+
+.pokedexImage {
+    width: 100%;
+    max-width: 400px;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.pokemonImage {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-65%, -20%);
+    height: 15%;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.pokemonData {
+    position: absolute;
+    font-weight: bold;
+    bottom: 41%;
+    right: 25%;
+    width: 100%;
+    text-align: right;
+    font-size: clamp(0px, 5vw, 1rem);
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.pokemonData .pokemonID {
+    color: #737373;
+}
+
+.pokemonData .pokemonName {
+    color: #404040;
+    text-transform: capitalize;
+}
+
+.pokedexForm {
+    position: absolute;
+    bottom: 28%;
+    left: 10%;
+    width: 70%;
+}
+.pokedexForm input {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #313131;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    color: #404040;
+    font-size: clamp(0px, 4vw, 1rem);
+    box-shadow: -2px 2px 0 #7c8282, -4px 4px 0 #313131;
+}
+
+.pokedexButtons {
+    position: absolute;
+    bottom: 7%;
+    left: 10%;
+    width: 70%;
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    user-select: none;
+}
+
+.pokedexButton {
+    background-color: #404040;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    padding: 5%;
+    width: 50%;
+    border: 2px solid black;
+    font-size: clamp(0rem, 4vw, 1rem);
+    box-shadow: -1px 1px 0 #313131, -3px 3px 0 black;
+    cursor: pointer;
+}
+
+.pokedexButton:active {
+    box-shadow: inset -2px 2px 0px #222;
+    font-size: 0.9rem;
+}
