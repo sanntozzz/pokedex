@@ -2,7 +2,7 @@
 
 O projeto foi realizado seguindo um [tutorial do youtube.](https://youtu.be/SjtdH3dWLa8)
 
-#### Linguagens usadas
+### Linguagens usadas
 
 -   HTML
 -   CSS
